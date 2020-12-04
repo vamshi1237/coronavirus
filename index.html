@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer", {            
+      title:{
+        text: "CORONA VIRUS CASES"              
+      },
+
+      data: [    
+      {       
+       type: "column",
+       name: "First Quarter",
+       dataPoints: [
+       { label: "USA", y: 5421265 },
+       { label: "INIDIA", y: 433624 },
+       { label: "BRAZIL", y: 561309 },                                    
+       { label: "RUSSIA", y: 478125	 },
+       { label: "FRANCE", y: 2007476 }
+       ]
+     },
+     { 
+
+      type: "column",
+      name: "Second Quarter",                
+      dataPoints: [
+      { label: "USA", y: 8228743 },
+       { label: "INIDIA", y: 8906652 },
+       { label: "BRAZIL", y: 5601804 },                                    
+       { label: "RUSSIA", y: 1803467 },
+       { label: "FRANCE", y: 162281 }
+       ]
+    },
+    {
+        type:"column",
+        name:"Third Quarter",
+        dataPoints: [
+        { label: "USA", y: 274495 },
+       { label: "INIDIA", y: 137823 },
+       { label: "BRAZIL", y: 173165 },                                    
+       { label: "RUSSIA", y: 40464 },
+       { label: "FRANCE", y: 52731 }
+       ]
+    }
+    ]
+  });
+
+    chart.render();
+  }
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+  <div id="chartContainer" style="height: 600px; width: 100%;">
+  </div>
+  
+
+</body>
+
+</html>
